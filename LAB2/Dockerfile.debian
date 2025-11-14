@@ -1,0 +1,16 @@
+FROM debian:11
+
+# Update package manager and install nginx
+RUN apt-get update && \
+    apt-get install -y nginx && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
+
+# Copy your HTML file
+COPY index.html /var/www/html/
+
+# Expose port
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]

@@ -1,0 +1,15 @@
+FROM amazonlinux:2
+
+# Install nginx
+RUN yum update -y && \
+    amazon-linux-extras install nginx1 -y && \
+    yum clean all
+
+# Copy your HTML file
+COPY index.html /usr/share/nginx/html/
+
+# Expose port
+EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
