@@ -12,14 +12,92 @@ Subfolders:
 
 ---
 
+## Script File Types Explained
+
+### What is a .bat File? 🖥️
+
+**Definition**: A `.bat` file (batch file) is a script file in Windows that contains a series of commands to be executed by the Windows Command Prompt (cmd.exe) automatically.
+
+**Key Characteristics**:
+
+| Aspect | Description |
+|--------|-------------|
+| **Extension** | `.bat` or `.cmd` |
+| **Platform** | Windows operating system |
+| **Purpose** | Automate repetitive command-line tasks |
+| **Execution** | Double-click or run from command prompt |
+| **Language** | Batch scripting language |
+
+**How .bat Files Work**:
+1. **Sequential Execution** - Commands are executed one after another, line by line
+2. **Command Prompt Integration** - Uses same commands you would type manually in cmd.exe
+3. **Automation** - Eliminates need to type multiple commands repeatedly
+
+### What is a .ps1 File? ⚡
+
+**Definition**: A `.ps1` file is a PowerShell script that contains PowerShell commands and can run on Windows, Linux, and macOS.
+
+**Key Characteristics**:
+
+| Aspect | Description |
+|--------|-------------|
+| **Extension** | `.ps1` |
+| **Platform** | Windows / Linux / macOS (PowerShell Core) |
+| **Purpose** | Advanced scripting, system administration, automation |
+| **Execution** | PowerShell console or ISE |
+| **Language** | PowerShell scripting language |
+
+**How .ps1 Files Work**:
+1. **Object-Based** - Works with .NET objects, not just text
+2. **Advanced Features** - Variables, functions, error handling, modules
+3. **Cross-Platform** - PowerShell Core runs on multiple operating systems
+
+### What is a .sh File? 🐧
+
+**Definition**: A `.sh` file is a shell script that contains commands for Unix-like operating systems (Linux, macOS, WSL).
+
+**Key Characteristics**:
+
+| Aspect | Description |
+|--------|-------------|
+| **Extension** | `.sh` |
+| **Platform** | Linux / macOS / WSL / Unix |
+| **Purpose** | System automation, deployment, build processes |
+| **Execution** | Shell interpreter (bash, zsh, etc.) |
+| **Language** | Shell scripting (bash, sh) |
+
+**How .sh Files Work**:
+1. **Shebang Line** - `#!/bin/bash` tells system which interpreter to use
+2. **POSIX Compliance** - Works across different Unix-like systems
+3. **Pipe Operations** - Excellent for chaining commands together
+
+### What is a .py File? 🐍
+
+**Definition**: A `.py` file is a Python script that contains Python code and can run on any platform with Python installed.
+
+**Key Characteristics**:
+
+| Aspect | Description |
+|--------|-------------|
+| **Extension** | `.py` |
+| **Platform** | Cross-platform (Windows/Linux/macOS) |
+| **Purpose** | Advanced programming, data processing, web development |
+| **Execution** | Python interpreter |
+| **Language** | Python programming language |
+
+**How .py Files Work**:
+1. **Interpreted Language** - No compilation needed, runs directly
+2. **Rich Libraries** - Extensive standard library and third-party packages
+3. **Object-Oriented** - Full programming language with classes, modules, etc.
+
 ## Extensions and Power Levels
 
-| Script Type | Platform | Extension | Power Level |
-|-------------|----------|-----------|-------------|
-| Batch | Windows | `.bat`, `.cmd` | Basic |
-| PowerShell | Windows / Linux / Mac | `.ps1` | Advanced |
-| Shell Script | Linux / Mac / WSL | `.sh` | Advanced |
-| Python | Cross-platform | `.py` | Very Advanced |
+| Script Type | Platform | Extension | Power Level | Best For |
+|-------------|----------|-----------|-------------|----------|
+| **Batch** | Windows | `.bat`, `.cmd` | Basic | Simple Windows automation |
+| **PowerShell** | Windows/Linux/Mac | `.ps1` | Advanced | Windows administration, complex scripts |
+| **Shell Script** | Linux/Mac/WSL | `.sh` | Advanced | Unix system automation, CI/CD |
+| **Python** | Cross-platform | `.py` | Very Advanced | Complex logic, data processing, APIs |
 
 ---
 
